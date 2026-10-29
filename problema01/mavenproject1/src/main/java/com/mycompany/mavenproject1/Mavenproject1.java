@@ -40,17 +40,9 @@ public class Mavenproject1 {
         
         gastoTotal = gasto1 + gasto2 + gasto3;
         
-        
-         System.out.printf("Nombre proyecto 1: %s\nGasto 1:%.2f\nNombre proyecto 2: %s\n "
-                + "Gasto proyecto 2: %.2f\nNombre proyecto 3: "
-                + "%s\nGasto proyecto 3: %.2f\nGasto total: %.2f\n",
-                proyecto1,
-                gasto1,
-                proyecto2,
-                gasto2,
-                proyecto3, gasto3, 
-                gastoTotal);
-        
+        System.out.printf("CONTROL DE GASTOS DE PROYECTOS\nProyectos:\n----------\n"
+                + "1. %s: $%.2f\n2. %s: $%.2f\n3. %s: $%.2f\n----------\nGASTO MENSUAL TOTAL: $%.2f\n", proyecto1,
+                gasto1, proyecto2, gasto2, proyecto3, gasto3, gastoTotal);
     
     }
 
