@@ -21,11 +21,23 @@ public class Problema03 {
         double minutos;
         double total;
         
-        System.out.println("Ingrese base del triangulo: ");
-        base = entrada.nextDouble();
-        System.out.println("Ingrese altura del triangulo: ");
-        altura = entrada.nextDouble();
+        System.out.println("Ingrese nombre del Titular: ");
+        titular = entrada.nextLine();
+        System.out.println("Ingrese Dirección: ");
+        direccion = entrada.nextLine();
+        System.out.println("Ingrese tarifa por minuto: ");
+        tarifa = entrada.nextDouble();
+        System.out.println("Ingrese minutos consumidos: ");
+        minutos = entrada.nextDouble();
         
+        total = tarifa * minutos;
         
-    }
+       System.out.printf("\n==========================\nPLANTILLA DE SERVICIO TELEFÓNICO\n"
+               + "==========================\n"
+                + "Titular: %s\nDirección: %s\n--------------------------\nCosto por minuto: "
+               + "$%.2f\nMinutos consumidos: %.2f\n--------------------------\nVALOR TOTAL A PAGAR: "
+               + "$%.2f\n=============\n", titular,
+                direccion, tarifa, minutos, total);
+        
+   }
 }
